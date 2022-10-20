@@ -1,0 +1,59 @@
+.video-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.emojii {
+  font-size: 20px;
+  display: inline-block;
+  position: absolute;
+  margin-left: 5px;
+  color: var(--color-primary);
+}
+.rights {
+  /* position: relative; */
+  padding-bottom: 3px;
+  /* left: -26%; */
+  font-size: 10px;
+}
+/* .testimonials__container {
+  width: 40%;
+}
+
+.client__avatar {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  border: 0.4rem solid var(--color-primary-variant);
+}
+
+.testimonial {
+  background: var(--color-bg-variant);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  user-select: none;
+}
+.client__review {
+  color: var(--color-light);
+  font-weight: 300;
+  display: block;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
+@media screen and (max-width: 1024px) {
+  .testimonials__container {
+    width: 60%;
+  }
+  .testimonial {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonials__container {
+    width: var(--container-width-sm);
+  }
+} */

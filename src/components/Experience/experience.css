@@ -1,0 +1,139 @@
+.experience__container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.experience__details {
+  display: flex;
+  margin: 40px;
+
+  align-items: center;
+}
+.experience__details h4 {
+  margin-left: 10px;
+}
+.experience__frontend {
+  border: 1px solid var(--color-primary);
+  width: 500px;
+  padding: 15px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.experience__details small {
+  position: absolute;
+  margin-top: 40px;
+}
+
+.experience__backend {
+  border: 1px solid var(--color-primary);
+  width: 500px;
+  padding: 15px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary-variant),
+    transparent
+  );
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.experience__frontend small {
+  letter-spacing: 1px;
+  padding: 25px;
+  margin-top: 50px;
+}
+.experience__frontend h3 {
+  border-bottom: 1px solid var(--color-primary);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.experience__backend h3 {
+  text-align: center;
+  border-bottom: 1px solid var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.experience__backend small {
+  letter-spacing: 1px;
+  padding: 25px;
+  margin-top: 50px;
+}
+
+.experience__frontend:hover h4 {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.experience__backend:hover h4 {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.experience__frontend:hover {
+  transform: scale(1.1);
+  transition: var(--transition);
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary-variant),
+    transparent
+  );
+}
+.experience__backend:hover {
+  transform: scale(1.1);
+  background: transparent;
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 700px) {
+  .experience__container {
+    display: flex;
+
+    gap: 30px;
+
+    flex-direction: column;
+  }
+
+  .experience__backend {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .experience__frontend {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .experience__backend:hover {
+    transform: scale(1);
+  }
+  .experience__frontend:hover {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .experience__frontend {
+    margin-right: 20px;
+  }
+  .experience__container {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .experience__frontend {
+    width: 370px;
+  }
+  .experience__backend {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .experience__container {
+    width: 80%;
+    display: flex;
+  }
+  .experience__frontend {
+    width: 330px;
+  }
+  .experience__backend {
+    width: 330px;
+  }
+}

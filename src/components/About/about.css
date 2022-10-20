@@ -1,0 +1,119 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+
+.about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+
+.about__me-image {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: scale(0.7);
+}
+
+.about__me-image:hover {
+  transform: scale(1);
+  transition: var(--transition);
+}
+
+#about button {
+  font-size: 17px;
+}
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.about__card {
+  background: var(--color-primary-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about__card h5 {
+  border-bottom: 1px solid var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.about__icon {
+  font-size: 20px;
+}
+
+.about__card:hover {
+  transform: scale(1.1);
+  transition: var(--transition);
+}
+
+.about__content p {
+  margin: 14px 0px 14px 0px;
+}
+.about__content a {
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+.poet {
+  display: inline-block;
+  padding-top: 10px;
+}
+.poet_color {
+  color: var(--color-primary);
+}
+.about__content p:hover {
+  transform: translateX(10px);
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 700px) {
+  .about__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  .about__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__me {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .about__cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 30px;
+  }
+  .about__cards :last-child {
+    margin-bottom: 20px;
+  }
+}
